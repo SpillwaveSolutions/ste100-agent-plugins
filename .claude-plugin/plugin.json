@@ -1,0 +1,17 @@
+{
+  "name": "ste100",
+  "version": "0.1.0",
+  "description": "ASD-STE100 Simplified Technical English gate: Claude Code skill + output style, local orchestrator/editor/adversary loop. No API calls.",
+  "author": {
+    "name": "Spillwave Solutions"
+  },
+  "homepage": "https://github.com/SpillwaveSolutions/ste100-agent-plugins",
+  "keywords": [
+    "ste100",
+    "asd-ste100",
+    "simplified-technical-english",
+    "documentation",
+    "claude-code",
+    "output-style"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ste100-agent-plugins",
+  "owner": {
+    "name": "Spillwave Solutions",
+    "url": "https://github.com/SpillwaveSolutions"
+  },
+  "plugins": [
+    {
+      "name": "ste100",
+      "source": "./",
+      "description": "Local ASD-STE100 STE compliance skill + Claude Code output style (orchestrator / editor / adversary). No API calls."
+    }
+  ]
+}

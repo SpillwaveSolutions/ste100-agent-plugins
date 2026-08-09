@@ -1,0 +1,14 @@
+{
+  "name": "ste100-agent-plugins",
+  "owner": {
+    "name": "Spillwave Solutions",
+    "url": "https://github.com/SpillwaveSolutions"
+  },
+  "plugins": [
+    {
+      "name": "ste100",
+      "source": "./plugins/grok-build",
+      "description": "Local ASD-STE100 STE skill for Grok Build. Orchestrator / editor / adversary loop. No API calls."
+    }
+  ]
+}
