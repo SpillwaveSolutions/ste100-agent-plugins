@@ -7,11 +7,9 @@
 | **Claude Code** | Skill + **output style** (`STE100`) |
 | **Grok Build** | Skill under `.grok/skills/ste100/` |
 | **Codex** | `AGENTS.md` merge + rules |
-| **TypeScript engine** | Deterministic orchestrator / editor / adversary (`engine/`) |
 
 > **No API keys. No network. No external STE service.**  
-> Agents enforce STE in-context via orchestrator → editor → adversary.  
-> The TypeScript engine enforces the same loop deterministically (CI / product).
+> Agents enforce STE in-context via orchestrator → editor → adversary.
 
 [Spillwave Solutions](https://github.com/SpillwaveSolutions) · MIT License
 
@@ -21,7 +19,6 @@
 - **Editor (doer)** — rewrites from the **original source** at aggressiveness 1→3
 - **Adversary** — weighted 6-axis rubric + hard gates
 - **Claude Code output style** — `/output-style STE100` for documentation sessions
-- **Reference engine** — pure TypeScript, zero deps (`engine/`)
 - Procedure ≤20 words / description ≤25 words · active voice · approved vocabulary subset
 
 ## Quick install
@@ -60,26 +57,6 @@ cat plugins/codex/AGENTS.ste100.md >> /path/to/project/AGENTS.md
 # keep plugins/codex/rules.md + loop.md nearby or paste rules into AGENTS.md
 ```
 
-### TypeScript engine
-
-```bash
-cp -R engine /path/to/your/project/src/ste100
-```
-
-```ts
-import { runComplianceLoop } from "./ste100";
-
-const result = runComplianceLoop(source, {
-  mode: "procedure",
-  maxRounds: 4,
-  targetScore: 92,
-  minCriterion: 80,
-});
-// result.finalText, result.finalReport, result.timeline
-```
-
-See [`engine/README.md`](engine/README.md).
-
 ## Repository layout
 
 ```text
@@ -89,7 +66,6 @@ skills/ste100/                    # Claude / shared skill
 plugins/claude-code/              # Claude pack (+ output-style.md)
 plugins/grok-build/               # Grok Build pack
 plugins/codex/                    # Codex AGENTS + rules
-engine/                           # TypeScript reference implementation
 AGENTS.md                         # Codex-ready entry
 CLAUDE.md                         # Claude project notes
 ```
