@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ste100",
+  "version": "0.1.1",
+  "description": "ASD-STE100 Simplified Technical English gate: Claude Code skill + output style, local orchestrator/editor/adversary loop, TypeScript engine. No API calls.",
+  "author": {
+    "name": "Rick Hightower",
+    "url": "https://github.com/RichardHightower"
+  },
+  "homepage": "https://github.com/SpillwaveSolutions/ste100-agent-plugins",
+  "repository": "https://github.com/SpillwaveSolutions/ste100-agent-plugins",
+  "license": "MIT",
+  "keywords": [
+    "ste100",
+    "claude-code",
+    "grok-build",
+    "codex",
+    "cursor",
+    "agent-plugins"
+  ]
+}

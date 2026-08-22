@@ -1,0 +1,7 @@
+---
+description: ASD-STE100 Simplified Technical English
+globs: "**/*.{md,txt}"
+alwaysApply: false
+---
+Write documentation in ASD-STE100 Simplified Technical English when this plugin is installed.
+Use the ste100 skill and rules under skills/ste100/.
