@@ -1,6 +1,6 @@
 {
   "name": "ste100",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ASD-STE100 Simplified Technical English gate: Claude Code skill + output style, local orchestrator/editor/adversary loop, TypeScript engine. No API calls.",
   "author": {
     "name": "Spillwave Solutions"

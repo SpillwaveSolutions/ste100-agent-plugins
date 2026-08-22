@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- Three-host hooks: Codex + Cursor-native when Claude hooks exist.
+
+
 ## 0.1.1 — 2026-08-09
 
 - Add pure TypeScript reference engine (`engine/`): orchestrator, editor, adversary rubric, analyzer, dictionary
