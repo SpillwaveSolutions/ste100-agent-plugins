@@ -22,6 +22,7 @@ by you (the agent) using the rules in this folder.
 - **No install scripts** that phone home
 - Work only on the user's document text in the workspace
 - Read `rules.md` and `loop.md` in this skill directory
+- Do not mix this pack with `google-docs-style` in the same document
 
 ## Roles you simulate (single agent, three hats)
 
@@ -35,7 +36,7 @@ by you (the agent) using the rules in this folder.
 
 ```
 original = source document
-report = adversary_audit(original)     # use rules.md STE-S1…S15
+report = adversary_audit(original)     # use rules.md STE-S1…S17
 if report.pass → return original
 
 best, bestReport = original, report
@@ -52,16 +53,16 @@ return best + residual adversary report
 
 ## Editor levels
 
-1. Vocabulary + full forms (no contractions, no Latin abbrevs)  
-2. Structure: expand parentheses; split compounds; active/imperative  
-3. Full STE rebuild: goal sentence + numbered steps + short notes  
+1. Vocabulary + full forms (no contractions, no Latin abbrevs, no em dash, no So/That/Thus/Hence openers)
+2. Structure: expand parentheses; split compounds; active/imperative
+3. Full STE rebuild: goal sentence + numbered steps + short notes
 
 ## Adversary hard gates (FAIL if any)
 
-- Any error-class issue  
-- Weighted score < 92  
-- Any rubric axis < 80  
-- Critical STE-S1 / STE-S2 / STE-S9  
+- Any error-class issue
+- Weighted score < 92
+- Any rubric axis < 80
+- Critical STE-S1 / STE-S2 / STE-S9 / STE-S16 / STE-S17
 
 ## Output format
 

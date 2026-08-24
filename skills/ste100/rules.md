@@ -2,7 +2,7 @@
 
 Use for technical documentation, procedures, maintenance steps, and operator guides.
 
-**Local only — no API calls.** Full official dictionary is ASD-proprietary; this pack uses public writing-rule practice plus a practical word list.
+**Local only. No API calls.** Full official dictionary is ASD-proprietary. This pack uses public writing-rule practice plus a practical word list.
 
 ## Core constraints
 
@@ -21,8 +21,12 @@ Use for technical documentation, procedures, maintenance steps, and operator gui
 | STE-S11 | No semicolons | Two sentences |
 | STE-S12 | Simple connectors | Do not pack two commands with *and/but/or* |
 | STE-S13 | Single-word verbs | *remove* not *take off*; *install* not *set up* |
-| STE-S14 | Consistency | One meaning → one word |
+| STE-S14 | Consistency | One meaning, one word |
 | STE-S15 | Short relatives | Avoid long *which/that* packing |
+| STE-S16 | No em dash | Do not use `—` or `--` as punctuation. Use a period or a comma. |
+| STE-S17 | No weak openers | Do not start a sentence with **So**, **That**, **Thus**, or **Hence**. |
+
+STE-S16 and STE-S17 are hard errors. They apply to every document this pack reviews.
 
 ## Preferred substitutions
 
@@ -57,3 +61,7 @@ Do this procedure to [goal].
 Notes:
 [Short descriptive sentences.]
 ```
+
+## Mutual exclusivity
+
+`ste100` and `google-docs-style` are alternate voice packs. Use one pack per document. Default for document-specialist and WikiTicket design docs is STE100. Switch only when the user names Google style.
